@@ -1,0 +1,174 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.Movie-wrapper {
+  flex: 0 1 calc(25% - 20px); /* 4 kolom di samping */
+  background-color: white;
+  color: black;
+  max-width: calc(25% - 20px);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+}
+
+.Movie-image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.Movie-search {
+  height: 48px;
+  font-size: 24px;
+  margin-bottom: 32px;
+  padding: 16px;
+  font-weight: bold;
+  width: 465px;
+  border-radius: 25px;
+  border: 2px solid rgb(241, 1, 9);
+}
+
+.Movie-search::placeholder {
+  color: rgb(241, 1, 9);
+}
+
+.kaca {
+  color: rgb(241, 1, 9);
+  position: relative;
+  right: 40px;
+}
+
+.custom-img {
+  position: relative; /* Tetapkan posisi elemen ke relatif */
+  height: 100vh;
+  background-image: url(./image/Logo.png); /* Background image URL */
+  background-size: cover;
+}
+
+.custom-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Lapisan hitam dengan 50% opacity */
+  z-index: 1; /* Pastikan lapisan hitam berada di depan background image */
+}
+
+.tag {
+  color: white;
+  z-index: 2;
+  position: relative;
+  margin-top: 15vh;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.teks {
+  color: white;
+  z-index: 2;
+  position: relative;
+  font-size: 25px;
+}
+
+.link {
+  z-index: 2;
+  position: relative;
+  background-color: rgb(241, 1, 9);
+  height: 40px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.watch {
+  z-index: 2;
+  position: relative;
+  background-color: rgb(241, 1, 9);
+  height: 40px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.movie-tag {
+  color: rgb(241, 1, 9);
+  z-index: 2;
+  position: relative;
+  font-size: 55px;
+  font-weight: bold;
+  display: flex;
+}
+
+.register {
+  z-index: 2;
+  position: relative;
+  background-color: rgb(241, 1, 9);
+  height: 40px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  margin-top: 1rem;
+}
+
+.Movie-detail {
+  color: black;
+}
+
+.image-detail {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(30%);
+}
+
+h1.card-title {
+  margin-bottom: 10px;
+}
+
+.card-detail {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  background: transparent;
+  color: #ffffff;
+}
+
+.card-text {
+  padding-right: 50%;
+}
+
+.bintang {
+  color: rgb(247, 191, 47);
+}
